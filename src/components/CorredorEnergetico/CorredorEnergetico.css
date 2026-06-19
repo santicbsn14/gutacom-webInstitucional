@@ -1,0 +1,91 @@
+.corredor {
+  background-color: var(--color-bg-light);
+  padding-block: var(--space-16);
+}
+
+.corredor__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+  width: 100%;
+}
+
+.corredor .section-header__title {
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-tight);
+  line-height: var(--lh-snug);
+  color: var(--color-petrol);
+  margin-bottom: var(--space-6);
+}
+
+.corredor__intro {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-light);
+  color: var(--color-petrol);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-10);
+}
+
+.corredor__provincias {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.corredor__provincia {
+  display: flex;
+  gap: var(--space-4);
+  align-items: baseline;
+}
+
+.corredor__provincia-label {
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-black);
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-accent);
+  min-width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.corredor__ciudad-list {
+   font-size: 10px;
+  font-weight: var(--fw-light);
+  color: var(--color-petrol);
+  line-height: var(--lh-relaxed);
+}
+
+.corredor__map {
+  position: static;
+  top: calc(80px + var(--space-8));
+}
+
+.corredor__map img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.9);
+}
+
+.corredor__map-placeholder {
+  aspect-ratio: 4 / 3;
+}
+@media (max-width: 900px) {
+  .corredor {
+    padding-block: 3rem;
+  }
+
+  .corredor__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .corredor__map {
+    position: static;
+    order: -1;
+  }
+
+  .corredor__map-placeholder {
+    aspect-ratio: 4 / 3;
+  }
+}
