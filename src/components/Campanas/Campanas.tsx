@@ -11,7 +11,7 @@ const CASOS = [
     id: 1,
     cliente: 'YPF',
     circuito: 'Circuito Patagonia Norte',
-    descripcion: 'Presencia estratégica en corredores vinculados a Vaca Muerta.',
+    descripcion: 'Presencia estratégica en corredores vinculados a Vaca Muerta',
     tipo: '',
     fotos: [campanaYpfUno, campanaYpfDos, campanaYpfTres],
   },
