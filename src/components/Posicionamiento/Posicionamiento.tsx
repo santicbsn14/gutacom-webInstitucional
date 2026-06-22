@@ -1,5 +1,5 @@
 import './Posicionamiento.css'
-import posicionamientoImg from '../../assets/images/posicionamiento.png'
+import posicionamientoImg from '../../assets/images/posicionamiento.webp'
 
 export default function Posicionamiento() {
   return (

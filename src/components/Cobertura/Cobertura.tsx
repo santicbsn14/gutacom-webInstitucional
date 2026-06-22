@@ -1,7 +1,7 @@
 import './Cobertura.css'
-import coberturaUno from '../../assets/images/coberturaUno.png'
-import coberturaDos from '../../assets/images/coberturaDos.png'
-import coberturaTres from '../../assets/images/coberturaTres.png'
+import coberturaUno from '../../assets/images/coberturaUno.webp'
+import coberturaDos from '../../assets/images/coberturaDos.webp'
+import coberturaTres from '../../assets/images/coberturaTres.webp'
 
 const FOTOS = [
   { id: 1, src: coberturaUno, alt: 'Cobertura — ruta' },
