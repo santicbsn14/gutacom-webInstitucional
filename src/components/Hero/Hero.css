@@ -39,16 +39,16 @@
   font-size: 3rem;
 }
 
-/* Gradient overlay */
+/* Gradient overlay — muy suave, solo para legibilidad del texto */
 .hero__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.1) 40%,
-    rgba(0, 0, 0, 0.7) 75%,
-    rgba(10, 10, 10, 1) 100%
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.05) 35%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(10, 10, 10, 0.3) 100%
   );
 }
 
@@ -85,16 +85,16 @@
 }
 
 .hero__subtitle {
-  font-size: var(--fs-body-lg);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   font-weight: var(--fw-regular);
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.9);
   line-height: var(--lh-snug);
   margin-bottom: var(--space-8);
 }
 
 .hero__actions {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-5);
   flex-wrap: wrap;
   position: relative;
   z-index: 1;

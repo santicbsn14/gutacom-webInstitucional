@@ -27,7 +27,11 @@
   align-items: center;
   margin-left: auto;
 }
-
+.navbar__logo img {
+  height: 44px;
+  width: auto;
+  margin-right: var(--space-3);
+}
 .navbar__logo-content {
   display: flex;
   flex-direction: column;

@@ -5,11 +5,14 @@ import campanaYpfTres from '../../assets/images/campanaYpfTres.png'
 import campanaMacroUno from '../../assets/images/campanaMacroUno.png'
 import campanaMacroDos from '../../assets/images/campanaMacroDos.png'
 import campanaMacroTres from '../../assets/images/campanaMacroTres.png'
-// Cuando lleguen las fotos reemplazar con imports de imágenes
+import ypfCampañas from '../../assets/images/ypfCampañas.png'
+import macroCampañas from '../../assets/images/macroCampañas.png'
+
 const CASOS = [
   {
     id: 1,
     cliente: 'YPF',
+    logo: ypfCampañas,
     circuito: 'Circuito Patagonia Norte',
     descripcion: 'Presencia estratégica en corredores vinculados a Vaca Muerta',
     tipo: '',
@@ -18,7 +21,8 @@ const CASOS = [
   {
     id: 2,
     cliente: 'Macro',
-    circuito: null,
+    logo: macroCampañas,
+    circuito: 'Aeropuerto San Carlos de Bariloche',
     descripcion: 'Campaña institucional / cobertura regional.',
     tipo: null,
     fotos: [campanaMacroUno, campanaMacroDos, campanaMacroTres],
@@ -45,20 +49,13 @@ export default function Campanas() {
               >
                 {caso.fotos.map((foto, i) => (
                   <div key={i} className="campanas__foto">
-                    {typeof foto === 'string' && foto.startsWith('Foto') ? (
-                      <div className="img-placeholder">
-                        <span>📷</span>
-                        <p>{foto}</p>
-                      </div>
-                    ) : (
-                      <img src={foto} alt={`${caso.cliente} campaña ${i + 1}`} />
-                    )}
+                    <img src={foto} alt={`${caso.cliente} campaña ${i + 1}`} />
                   </div>
                 ))}
               </div>
 
               <div className="campanas__info">
-                <span className="campanas__cliente">{caso.cliente}</span>
+                <img src={caso.logo} alt={caso.cliente} className="campanas__logo" />
                 {caso.circuito && (
                   <p className="campanas__circuito">{caso.circuito}</p>
                 )}

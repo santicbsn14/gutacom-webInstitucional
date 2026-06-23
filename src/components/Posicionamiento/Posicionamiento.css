@@ -1,6 +1,9 @@
 /* TODO: reemplazar con el código hex exacto cuando lo confirme tu tío */
 .posicionamiento {
-  background-color:var(--color-petrol);
+  background-color: var(--color-petrol);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
   padding-block: var(--space-16);
 }
 
@@ -10,7 +13,7 @@
 }
 
 .posicionamiento__title {
-  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls-tight);
   line-height: var(--lh-snug);
@@ -23,10 +26,11 @@
   grid-template-columns: 1.4fr 1fr;
   gap: var(--space-16);
   align-items: center;
+  width: 100%;
 }
 
 .posicionamiento__text {
-  font-size: var(--fs-body);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   color: var(--color-text-muted);
   line-height: var(--lh-relaxed);
   max-width: 65ch;
@@ -49,6 +53,10 @@
 }
 
 @media (max-width: 900px) {
+  .posicionamiento {
+    min-height: auto;
+  }
+
   .posicionamiento__grid {
     grid-template-columns: 1fr;
     gap: var(--space-10);

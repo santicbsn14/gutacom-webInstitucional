@@ -1,5 +1,8 @@
 .marcas {
   background-color: var(--color-petrol);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
   padding-block: var(--space-16);
 }
 
@@ -7,7 +10,7 @@
   justify-content: center;
   border-left: none;
   position: relative;
-    display: flex;
+  display: flex;
   width: 100%;
   text-align: center;
   letter-spacing: 0.3em;
@@ -26,11 +29,18 @@
   margin-bottom: var(--space-16);
 }
 
+.marcas__separator {
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: -3rem auto var(--space-16);
+}
+
 .marcas__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--space-1);
-  border: 1px solid var(--color-border);
+  width: 100%;
 }
 
 .marcas__item {
@@ -38,25 +48,17 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-8) var(--space-6);
-  border: 1px solid var(--color-border);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
   min-height: 90px;
-  transition: background-color var(--transition-fast);
 }
 
-.marcas__item:hover {
-  background-color: var(--color-surface);
+.marcas__item:nth-child(5n) {
+  border-right: none;
 }
 
 .marcas__item img {
   max-height: 36px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.6;
-  transition: opacity var(--transition-fast);
-}
-
-.marcas__item:hover img {
-  opacity: 1;
 }
 
 /* Placeholder texto hasta que lleguen los logos */
@@ -70,8 +72,20 @@
 }
 
 @media (max-width: 900px) {
+  .marcas {
+    min-height: auto;
+  }
+
   .marcas__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .marcas__item:nth-child(5n) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .marcas__item:nth-child(3n) {
+    border-right: none;
   }
 }
 
@@ -79,10 +93,12 @@
   .marcas__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-.marcas__separator {
-  width: 80px;
-  height: 3px;
-  background-color: var(--color-accent);
-  margin: -3rem auto var(--space-16);
+
+  .marcas__item:nth-child(3n) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .marcas__item:nth-child(2n) {
+    border-right: none;
+  }
 }

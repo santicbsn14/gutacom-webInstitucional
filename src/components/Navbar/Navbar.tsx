@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
+import logoGutacom from '../../assets/images/logoGutacom.png'
 
 const NAV_LINKS = [
   { label: 'Inicio',       href: '#inicio' },
@@ -38,11 +39,7 @@ export default function Navbar() {
         </nav>
 
         <a href="#inicio" className="navbar__logo">
-          {/* Reemplazar con <img src={logo} alt="GUTACOM" /> cuando llegue el logo */}
-          <div className="navbar__logo-content">
-            <span className="navbar__logo-text">GUTACOM</span>
-            <span className="navbar__logo-sub">Consultores / Vía Pública</span>
-          </div>
+          <img src={logoGutacom} alt="GUTACOM — Consultores / Vía Pública" />
         </a>
 
         <button

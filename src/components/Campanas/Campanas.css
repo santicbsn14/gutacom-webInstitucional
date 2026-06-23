@@ -26,21 +26,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-10);
-  align-items: center;
-  padding-bottom: var(--space-16);
-  border-bottom: 1px solid #e0e0dc;
-}
-
-.campanas__caso:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+  align-items: stretch;
 }
 
 .campanas__fotos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4px;
-  max-width: 380px;
+  gap: 6px;
+  width: 100%;
 }
 
 .campanas__foto {
@@ -55,27 +48,25 @@
   object-fit: cover;
 }
 
-.campanas__foto .img-placeholder {
-  height: 100%;
-  border-radius: 0;
-}
-
 /* Info — mosaico marca */
 .campanas__info {
   background-color: #ffffff;
-  padding: var(--space-5);
+  padding: var(--space-6);
   border-radius: var(--radius-sm);
   border: 1px solid #e0e0dc;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
-.campanas__cliente {
-  display: inline-block;
-  font-size: 1.6rem;
-  font-weight: var(--fw-black);
-  color: var(--color-petrol);
-  margin-bottom: var(--space-2);
+.campanas__logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--space-3);
+  align-self: flex-start;
 }
 
 .campanas__circuito {
@@ -88,7 +79,7 @@
 }
 
 .campanas__descripcion {
-  font-size: var(--fs-body-sm);
+  font-size: 0.78rem;
   font-weight: var(--fw-light);
   color: var(--color-text-subtle);
   line-height: var(--lh-normal);
@@ -105,15 +96,8 @@
   .campanas__caso {
     grid-template-columns: 1fr;
   }
-
-  .campanas__fotos,
-  .campanas__info {
-    max-width: 100%;
-  }
 }
-.campanas__caso {
-  border-bottom: none;
-}
-.campanas__descripcion {
-  font-size: 0.62rem;
-}
+/* .campanas__caso {
+  max-width: 90%;
+  margin-inline: auto;
+} */

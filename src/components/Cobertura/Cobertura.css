@@ -1,10 +1,14 @@
 .cobertura {
   background-color: var(--color-petrol);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
   padding-block: var(--space-16);
 }
 
 .cobertura__header {
   margin-bottom: var(--space-12);
+  width: 100%;
 }
 
 .cobertura__header .eyebrow {
@@ -12,7 +16,7 @@
 }
 
 .cobertura__header .section-header__title {
-  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls-tight);
   line-height: var(--lh-snug);
@@ -22,7 +26,7 @@
 
 .cobertura__header .section-header__subtitle {
   max-width: 70ch;
-  font-size: var(--fs-body);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   font-weight: var(--fw-light);
   color: var(--color-text);
   line-height: var(--lh-relaxed);
@@ -32,13 +36,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
+  width: 100%;
 }
 
 .cobertura__foto {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
-  max-height: 180px;
+  max-height: 220px;
 }
 
 .cobertura__foto img {
@@ -58,6 +63,10 @@
 }
 
 @media (max-width: 768px) {
+  .cobertura {
+    min-height: auto;
+  }
+
   .cobertura__grid {
     grid-template-columns: 1fr 1fr;
   }
