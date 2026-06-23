@@ -1,7 +1,7 @@
 import './Marcas.css'
 import macro from '../../assets/images/macro.png'
 import ypf from '../../assets/images/ypf.png'
-import flybondi from '../../assets/images/flybondi.png'
+import flybondi from '../../assets/images/flyBondi.png'
 import correoArgentino from '../../assets/images/correoArgentino.png'
 import telam from '../../assets/images/telam.png'
 import aerolineasArgentinas from '../../assets/images/aerolineasArgentinas.png'
