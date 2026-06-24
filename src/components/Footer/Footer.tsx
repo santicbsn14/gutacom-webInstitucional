@@ -19,7 +19,7 @@ export default function Footer() {
               Desarrollado por{' '}
               {/* TODO: reemplazar con el nombre/link del desarrollador */}
               <a href="https://santiago-viale-web.vercel.app" target="_blank" rel="noopener noreferrer">
-                ComunicacionDigital.ar
+                Santiago Viale
               </a>
             </p>
           </div>
