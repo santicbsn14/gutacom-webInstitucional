@@ -9,7 +9,7 @@ const PASOS = [
 
 export default function Expansion() {
   return (
-    <section className="expansion section">
+    <section className="expansion section" id="posiciones">
       <div className="expansion__inner">
         <div className="expansion__image">
            <img src={fotoExpansion} alt="Expansión GUTACOM" />

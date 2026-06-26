@@ -1,4 +1,5 @@
 import './Footer.css'
+import logoGutacom from '../../assets/images/logoGutacom.png'
 
 export default function Footer() {
   return (
@@ -6,8 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__inner">
           <div className="footer__brand">
-            {/* Reemplazar con <img src={logo} alt="GUTACOM" /> */}
-            <span className="footer__logo">GUTACOM</span>
+            <img src={logoGutacom} alt="GUTACOM — Consultores / Vía Pública" className="footer__logo" />
             <p className="footer__tagline">Vía pública · Patagonia Norte</p>
           </div>
 
@@ -17,7 +17,6 @@ export default function Footer() {
             </p>
             <p className="footer__dev">
               Desarrollado por{' '}
-              {/* TODO: reemplazar con el nombre/link del desarrollador */}
               <a href="https://santiago-viale-web.vercel.app" target="_blank" rel="noopener noreferrer">
                 Santiago Viale
               </a>

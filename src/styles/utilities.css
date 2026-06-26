@@ -72,10 +72,10 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: var(--space-2) var(--space-5);
+  padding: 0.6rem 1.8rem;
   font-family: var(--font-primary);
-  font-size: 0.78rem;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: var(--fw-regular);
   letter-spacing: 0.02em;
   text-transform: none;
   border-radius: var(--radius-sm);

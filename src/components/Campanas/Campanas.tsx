@@ -31,7 +31,7 @@ const CASOS = [
 
 export default function Campanas() {
   return (
-    <section className="campanas section section--surface-2">
+    <section className="campanas section section--surface-2" id="casos">
       <div className="container">
         <div className="campanas__header section-header">
           <p className="eyebrow">Campañas en Territorio</p>

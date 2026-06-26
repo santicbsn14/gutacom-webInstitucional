@@ -3,12 +3,14 @@ import './Navbar.css'
 import logoGutacom from '../../assets/images/logoGutacom.png'
 
 const NAV_LINKS = [
-  { label: 'Inicio',       href: '#inicio' },
+  { label: 'Inicio',        href: '#inicio' },
   { label: 'Quiénes somos', href: '#quienes-somos' },
-  { label: 'Cobertura',    href: '#cobertura' },
-  { label: 'Capacidades',  href: '#capacidades' },
-  { label: 'Clientes',     href: '#clientes' },
-  { label: 'Contacto',     href: '#contacto' },
+  { label: 'Posiciones',    href: '#posiciones' },
+  { label: 'Cobertura',     href: '#cobertura' },
+  { label: 'Capacidades',   href: '#capacidades' },
+  { label: 'Clientes',      href: '#clientes' },
+  { label: 'Casos',         href: '#casos' },
+  { label: 'Contacto',      href: '#contacto' },
 ]
 
 export default function Navbar() {
